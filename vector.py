@@ -37,7 +37,7 @@ class Vector:
         return self.dim
 
     def pr(self):
-        return f"({', '.join(map(str, *self.components))})"
+        return f"({', '.join(map(str, self.components))})"
     def __len__(self):
         return self.dim
 
@@ -67,7 +67,7 @@ def cross(v, w):
     u2 = v3 * w1 - v1 * w3
     u3 = v1 * w2 - v2 * w1
 
-    return Vector([u1, u2, u3])
+    return Vector(*[u1, u2, u3])
 
 def is_orthogonal(v, w):
     return w * v == 0
