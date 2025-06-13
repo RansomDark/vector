@@ -1,5 +1,6 @@
 # vector
 Simple python library for working with vectors
+> Warning! Not in PyPI
 
 # Usage 
 ```python
